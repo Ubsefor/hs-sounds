@@ -21,6 +21,8 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- bytestring
+- process
 
 library:
   source-dirs: src
@@ -34,6 +36,8 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
+    - bytestring
+    - process
     - hs-sounds
 
 tests:
@@ -45,4 +49,6 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
+    - bytestring
+    - process
     - hs-sounds
